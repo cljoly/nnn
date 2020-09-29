@@ -129,18 +129,18 @@ struct key {
 static struct key bindings[] = {
 	/* Back */
 	{ KEY_LEFT,       SEL_BACK },
-	{ 'h',            SEL_BACK },
+	{ 'c',            SEL_BACK },
 	/* Inside or select */
 	{ KEY_ENTER,      SEL_OPEN },
 	{ '\r',           SEL_OPEN },
 	/* Pure navigate inside */
 	{ KEY_RIGHT,      SEL_NAV_IN },
-	{ 'l',            SEL_NAV_IN },
+	{ 'r',            SEL_NAV_IN },
 	/* Next */
-	{ 'j',            SEL_NEXT },
+	{ 't',            SEL_NEXT },
 	{ KEY_DOWN,       SEL_NEXT },
 	/* Previous */
-	{ 'k',            SEL_PREV },
+	{ 's',            SEL_PREV },
 	{ KEY_UP,         SEL_PREV },
 	/* Page down */
 	{ KEY_NPAGE,      SEL_PGDN },
@@ -172,7 +172,7 @@ static struct key bindings[] = {
 	{ 'b',            SEL_BOOKMARK },
 	{ CONTROL('_'),   SEL_BOOKMARK },
 	/* Connect to server over SSHFS */
-	{ 'c',            SEL_REMOTE },
+	{ 'h',            SEL_REMOTE },
 	/* Cycle contexts in forward direction */
 	{ '\t',           SEL_CYCLE },
 	/* Cycle contexts in reverse direction */
@@ -206,7 +206,7 @@ static struct key bindings[] = {
 	/* Create archive */
 	{ 'z',            SEL_ARCHIVE },
 	/* Sort toggles */
-	{ 't',            SEL_SORT },
+	{ 'j',            SEL_SORT },
 	{ CONTROL('T'),   SEL_SORT },
 	/* Redraw window */
 	{ CONTROL('L'),   SEL_REDRAW },
@@ -240,7 +240,7 @@ static struct key bindings[] = {
 	/* Show rename prompt */
 	{ CONTROL('R'),   SEL_RENAME },
 	/* Rename contents of current dir */
-	{ 'r',            SEL_RENAMEMUL },
+	{ 'l',            SEL_RENAMEMUL },
 	/* Disconnect a SSHFS mount point */
 	{ 'u',            SEL_UMOUNT },
 	/* Show help */
@@ -261,7 +261,7 @@ static struct key bindings[] = {
 	/* Lock screen */
 	{ '0',            SEL_LOCK },
 	/* Manage sessions */
-	{ 's',            SEL_SESSIONS },
+	{ 'k',            SEL_SESSIONS },
 	/* Export list */
 	{ '>',            SEL_EXPORT },
 	/* Set time type */
